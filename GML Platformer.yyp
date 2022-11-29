@@ -4,9 +4,15 @@
   "name": "GML Platformer",
   "resources": [
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"order":0,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":2,},
     {"id":{"name":"spr_inviswall","path":"sprites/spr_inviswall/spr_inviswall.yy",},"order":1,},
-    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"spr_playerjump","path":"sprites/spr_playerjump/spr_playerjump.yy",},"order":3,},
+    {"id":{"name":"spr_clouds","path":"sprites/spr_clouds/spr_clouds.yy",},"order":7,},
     {"id":{"name":"Obj_inviswall","path":"objects/Obj_inviswall/Obj_inviswall.yy",},"order":1,},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":5,},
+    {"id":{"name":"spr_grain","path":"sprites/spr_grain/spr_grain.yy",},"order":8,},
+    {"id":{"name":"Spr_walls","path":"sprites/Spr_walls/Spr_walls.yy",},"order":6,},
+    {"id":{"name":"spr_playerrun","path":"sprites/spr_playerrun/spr_playerrun.yy",},"order":4,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
