@@ -52,17 +52,18 @@ if(!place_meeting(x,y+1,Obj_inviswall))
 sprite_index = spr_playerjump;
 
 image_speed = 0;
-if(vsp > 0) image_index = 1; else image_index = 0; 
+if (vsp > 0) image_index = 1; else image_index = 0; 
 }
 else
 {
 	image_speed = 1;
-	if(hsp = 0)
+	if (hsp == 0)
 	{
 		sprite_index = spr_player;
 	}
 	else
 	{
-	image_index = spr_playerrun;	
+	sprite_index = spr_playerrun;	
 	}
 }
+if (hsp != 0) image_xscale = sign(hsp);
