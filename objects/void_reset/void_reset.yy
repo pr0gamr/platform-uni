@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_inviswall",
+  "name": "void_reset",
   "spriteId": {
-    "name": "spr_inviswall",
-    "path": "sprites/spr_inviswall/spr_inviswall.yy",
+    "name": "spr_voidreset",
+    "path": "sprites/spr_voidreset/spr_voidreset.yy",
   },
   "solid": false,
   "visible": false,
@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
