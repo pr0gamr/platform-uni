@@ -1,18 +1,14 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 08D783B7
-/// @DnDArgument : "code" "if(hormv == 0)$(13_10){$(13_10)x += 2;$(13_10)}$(13_10)if(hormv == 1)$(13_10){$(13_10)x -= 2;	$(13_10)}$(13_10)if(hormv == 2)$(13_10){$(13_10)	hormv = 0$(13_10)}$(13_10)if(place_meeting(x + 3,y,obj_movingbounce))$(13_10){$(13_10)hormv = 1$(13_10)}$(13_10)$(13_10)if(place_meeting(x - 3,y,obj_movingbounce))$(13_10){$(13_10)hormv = 0$(13_10)}"
+/// @DnDArgument : "code" "if(hormv == 0)$(13_10){$(13_10)x += 3;$(13_10)}$(13_10)if(hormv == 1)$(13_10){$(13_10)x -= 3;	$(13_10)}$(13_10)if(place_meeting(x + 3,y,obj_movingbounce))$(13_10){$(13_10)hormv = 1$(13_10)}$(13_10)$(13_10)if(place_meeting(x - 3,y,obj_movingbounce))$(13_10){$(13_10)hormv = 0$(13_10)}"
 if(hormv == 0)
 {
-x += 2;
+x += 3;
 }
 if(hormv == 1)
 {
-x -= 2;	
-}
-if(hormv == 2)
-{
-	hormv = 0
+x -= 3;	
 }
 if(place_meeting(x + 3,y,obj_movingbounce))
 {

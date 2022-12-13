@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 08D783B7
-/// @DnDArgument : "code" "if(vermv == 0)$(13_10){$(13_10)y += 2;$(13_10)}$(13_10)if(vermv == 1)$(13_10){$(13_10)y -= 2;	$(13_10)}$(13_10)if(vermv == 2)$(13_10){$(13_10)	vermv = 0$(13_10)}$(13_10)if(place_meeting(x,y+3,obj_movingbounce))$(13_10){$(13_10)vermv = 1$(13_10)}$(13_10)$(13_10)if(place_meeting(x,y-3,obj_movingbounce))$(13_10){$(13_10)vermv = 0$(13_10)}"
+/// @DnDArgument : "code" "if(vermv == 0)$(13_10){$(13_10)y += 2;$(13_10)}$(13_10)if(vermv == 1)$(13_10){$(13_10)y -= 2;	$(13_10)}$(13_10)if(place_meeting(x,y+3,obj_movingbounce))$(13_10){$(13_10)vermv = 1$(13_10)}$(13_10)$(13_10)if(place_meeting(x,y-3,obj_movingbounce))$(13_10){$(13_10)vermv = 0$(13_10)}"
 if(vermv == 0)
 {
 y += 2;
@@ -9,10 +9,6 @@ y += 2;
 if(vermv == 1)
 {
 y -= 2;	
-}
-if(vermv == 2)
-{
-	vermv = 0
 }
 if(place_meeting(x,y+3,obj_movingbounce))
 {
