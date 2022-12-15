@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_movingbounce",
   "spriteId": {
-    "name": "spr_voidreset",
-    "path": "sprites/spr_voidreset/spr_voidreset.yy",
+    "name": "spr_movingbounce",
+    "path": "sprites/spr_movingbounce/spr_movingbounce.yy",
   },
   "solid": false,
   "visible": false,
