@@ -8,20 +8,41 @@ key_jump = keyboard_check_pressed(vk_up);
 
 // movement
 
+var onawall = place_meeting(x+5, y, Obj_inviswall) - place_meeting(x-5, y, Obj_inviswall);
+
+mvtlocked = max(mvtlocked -1, 0);
+
 var _move = key_right - key_left;
 
 hsp = _move * walksp;
 
+
+
+if(mvtlocked <= 0)
+{
+if (onawall != 0) vsp = min(vsp + 1, 5)
+else
 vsp = vsp + grv;
 
-if (place_meeting(x,y+1,Obj_inviswall)) and (key_jump)
+
+if (key_jump)
+{
+	if (place_meeting(x,y+1,Obj_inviswall)) and (key_jump)
 {
 vsp = -jumpsp	
 }
-if (place_meeting(x,y+1,obj_deleteablewall)) and (key_jump)
+
+if (onawall != 0)
 {
-vsp = -jumpsp	
+vsp = -jumpsp
+hsp = onawall * walksp;
+
+mvtlocked = 10;
 }
+}
+}
+
+
 
 //horizontal collision
 
@@ -34,15 +55,6 @@ if(place_meeting(x + hsp,y,Obj_inviswall))
 	}
 hsp = 0;
 }
-if(place_meeting(x + hsp,y,obj_deleteablewall))
-
-{
-	while (!place_meeting(x+sign(hsp),y,obj_deleteablewall))
-	{
-		x = x + sign(hsp);
-	}
-hsp = 0;
-}
 x = x + hsp
 
 //vertical collision
@@ -50,14 +62,6 @@ x = x + hsp
 if(place_meeting(x,y+vsp,Obj_inviswall))
 {
 	while (!place_meeting(x,y+sign(vsp),Obj_inviswall))
-	{
-		y = y + sign(vsp);
-	}
-vsp = 0;
-}
-if(place_meeting(x,y+vsp,obj_deleteablewall))
-{
-	while (!place_meeting(x,y+sign(vsp),obj_deleteablewall))
 	{
 		y = y + sign(vsp);
 	}
