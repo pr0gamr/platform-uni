@@ -33,6 +33,7 @@
     {"id":{"name":"rm_tut2","path":"rooms/rm_tut2/rm_tut2.yy",},"order":1,},
     {"id":{"name":"rm_lvl6","path":"rooms/rm_lvl6/rm_lvl6.yy",},"order":11,},
     {"id":{"name":"rm_HARD","path":"rooms/rm_HARD/rm_HARD.yy",},"order":8,},
+    {"id":{"name":"rm_troll","path":"rooms/rm_troll/rm_troll.yy",},"order":13,},
     {"id":{"name":"spr_grain","path":"sprites/spr_grain/spr_grain.yy",},"order":8,},
     {"id":{"name":"spr_deletablewall","path":"sprites/spr_deletablewall/spr_deletablewall.yy",},"order":20,},
     {"id":{"name":"spr_sawtut","path":"sprites/spr_sawtut/spr_sawtut.yy",},"order":17,},
@@ -81,6 +82,7 @@
     {"roomId":{"name":"rm_lvl7","path":"rooms/rm_lvl7/rm_lvl7.yy",},},
     {"roomId":{"name":"rm_HARD","path":"rooms/rm_HARD/rm_HARD.yy",},},
     {"roomId":{"name":"rm_GGS","path":"rooms/rm_GGS/rm_GGS.yy",},},
+    {"roomId":{"name":"rm_troll","path":"rooms/rm_troll/rm_troll.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

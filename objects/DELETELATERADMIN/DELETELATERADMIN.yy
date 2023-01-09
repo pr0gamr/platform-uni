@@ -26,6 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":6,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
