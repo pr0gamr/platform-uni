@@ -69,13 +69,14 @@ y = y + vsp
 
 //animation
 
-if(!place_meeting(x,y+1,Obj_inviswall))
+if(!place_meeting(x,y+1,Obj_inviswall) and !place_meeting(x,y+1,obj_deleteablewall))
 {
 sprite_index = spr_playerjump;
 
 image_speed = 0;
 if (vsp > 0) image_index = 1; else image_index = 0; 
 }
+
 else
 {
 	image_speed = 1;
@@ -88,4 +89,5 @@ else
 	sprite_index = spr_playerrun;	
 	}
 }
+
 if (hsp != 0) image_xscale = sign(hsp);
